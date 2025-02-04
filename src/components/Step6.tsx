@@ -49,7 +49,7 @@ export default function Step6({ formData, updateFormData }) {
           onCheckedChange={handleSwitchChange}
         />
         <Label htmlFor="allowScraping">
-          Allow scraping of website's publicly available data
+          Allow scraping of website&apos;s publicly available data
         </Label>
       </div>
 
