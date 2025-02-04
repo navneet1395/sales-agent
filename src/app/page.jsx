@@ -78,7 +78,7 @@ export default function WebsiteSalesAgentForm() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (validateStep()) {
       console.log(formData);
@@ -122,7 +122,9 @@ export default function WebsiteSalesAgentForm() {
               <CardTitle>Website Sales Agent Form</CardTitle>
               <CardDescription>Step {step} of 5</CardDescription>
             </CardHeader>
-            <CardContent className="min-h-[67vh] overflow-y-auto">{renderStep()}</CardContent>
+            <CardContent className="min-h-[67vh] overflow-y-auto">
+              {renderStep()}
+            </CardContent>
             <CardFooter className="flex justify-between">
               {step > 1 && (
                 <Button type="button" onClick={prevStep} variant="outline">

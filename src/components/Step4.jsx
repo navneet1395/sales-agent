@@ -1,30 +1,32 @@
-import { useState } from "react"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { PlusCircle, Trash2 } from "lucide-react"
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { PlusCircle } from "lucide-react";
 
 export default function Step4({ formData, updateFormData }) {
   const [newPromotion, setNewPromotion] = useState({
     code: "",
     description: "",
     expiryDate: "",
-  })
+  });
 
   const handlePromotionChange = (e) => {
-    setNewPromotion((prev) => ({ ...prev, [e.target.name]: e.target.value }))
-  }
+    setNewPromotion((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const addPromotion = () => {
-    if (newPromotion.code && newPromotion.description && newPromotion.expiryDate) {
-      updateFormData({ promotions: [...formData.promotions, newPromotion] })
-      setNewPromotion({ code: "", description: "", expiryDate: "" })
+    if (
+      newPromotion.code &&
+      newPromotion.description &&
+      newPromotion.expiryDate
+    ) {
+      updateFormData({ promotions: [...formData.promotions, newPromotion] });
+      setNewPromotion({ code: "", description: "", expiryDate: "" });
     } else {
-      alert("Please fill in all promotion fields")
+      alert("Please fill in all promotion fields");
     }
-  }
-
- 
+  };
 
   return (
     <div className="space-y-2">
@@ -60,4 +62,3 @@ export default function Step4({ formData, updateFormData }) {
     </div>
   );
 }
-
