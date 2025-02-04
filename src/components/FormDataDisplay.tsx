@@ -140,7 +140,7 @@ export default function FormDataDisplay({ data, updateFormData }) {
             title="Policies"
             items={Object.entries(data.policies)}
             onDelete={null} // No delete button for policies
-            renderContent={([key, value]) => <p>{value}</p>}
+            renderContent={([value]) => <p>{value}</p>}
             formatTitle={([key]) =>
               key
                 .replace(/([A-Z])/g, " $1")

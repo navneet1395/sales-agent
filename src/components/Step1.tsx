@@ -2,16 +2,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { useState } from "react";
-import { Button } from "./ui/button";
-import { PlusCircle } from "lucide-react";
 
 export default function Step1({ formData, updateFormData }) {
   const handleInputChange = (e) => {
     updateFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  
 
   return (
     <div className="space-y-4">
@@ -72,9 +67,6 @@ export default function Step1({ formData, updateFormData }) {
           )}
         </RadioGroup>
       </div>
-
-
-      
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Erica_One, Ribeye, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 import Link from "next/link";
