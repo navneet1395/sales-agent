@@ -1,0 +1,25 @@
+{
+representativeName: "",
+websiteName: "",
+websiteDescription: "",
+voiceTone: "",
+products: [{name: "",
+description: "",
+pricing: "",
+specifications: "",
+availability: "",
+usp: "",
+offers: "",}],
+faqs: [{{ question: "", answer: "" }}],
+promotions: [{ code: "", description: "", expiryDate: "" }],
+policies: {
+shippingPolicy: "",
+returnsPolicy: "",
+paymentMethods: "",
+customerSupport: "",
+termsConditions: "",
+},
+allowScraping: false,
+additionalNotes: "",
+}
+# sales-agent
